@@ -35,6 +35,11 @@
 .bbb .contact-section p { font-size: 16px; color: #5a3a10; max-width: 480px; margin: 0 auto 28px; line-height: 1.7; }
 .bbb .contact-btn { display: inline-block; background: #1a3a4a; color: #fdf8f0; padding: 14px 32px; border-radius: 40px; font-size: 15px; font-family: Georgia, serif; text-decoration: none; }
 .bbb .footer { background: #1a3a4a; color: #6a8a9a; padding: 24px 40px; text-align: center; font-size: 13px; }
+.bbb-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 3rem; background: rgba(253, 246, 227, 0.92); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(200, 144, 42, 0.2); }
+.bbb-nav-logo { font-family: Georgia, serif; font-weight: 700; font-size: 1.1rem; color: #c8902a; letter-spacing: 0.05em; text-decoration: none; }
+.bbb-nav-links { display: flex; gap: 2rem; list-style: none; }
+.bbb-nav-links a { font-family: Georgia, serif; font-size: 0.85rem; color: #6a5a4a; text-decoration: none; letter-spacing: 0.08em; text-transform: uppercase; }
+.bbb-nav-links a:hover { color: #c8902a; }  
 @media (max-width: 640px) {
   .bbb .hero h1 { font-size: 36px; }
   .bbb .img-grid { grid-template-columns: 1fr; padding: 0 20px 16px; }
@@ -42,9 +47,18 @@
   .bbb .section { padding: 48px 20px; }
 }
 </style>
-
+  
+<nav class="bbb-nav">
+  <a href="index.html" class="bbb-nav-logo">Billy and his Beloved Boat</a>
+  <ul class="bbb-nav-links">
+    <li><a href="#pitch">For publishers</a></li>
+    <li><a href="resources.html">Discussion guide</a></li>
+    <li><a href="story.html">Read the story →</a></li>
+  </ul>
+</nav>
+  
 <div class="bbb">
-  <div class="hero">
+  <div class="hero" style="padding-top: 120px;">
     <p class="hero-eyebrow">A picture book for children — and everyone who has ever loved something</p>
     <h1>Billy and his<br>Beloved Boat</h1>
     <p class="hero-sub">A story about adventures, repairs, and what makes a thing itself</p>
